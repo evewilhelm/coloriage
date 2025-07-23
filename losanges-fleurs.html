@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coloriage – Motif losanges & fleurs</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .palette {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      gap: 10px;
+    }
+    .color {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+    svg {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎨 Motif à colorier – Losanges et Fleurs</h1>
+    <p>Théo et Maé dansent entre les formes géométriques pendant que Léo vérifie la symétrie !</p>
+  </header>
+
+  <div class="palette">
+    <div class="color" style="background:#f29c9c" onclick="setColor('#f29c9c')"></div>
+    <div class="color" style="background:#fae39a" onclick="setColor('#fae39a')"></div>
+    <div class="color" style="background:#a6e3d4" onclick="setColor('#a6e3d4')"></div>
+    <div class="color" style="background:#c9a7e1" onclick="setColor('#c9a7e1')"></div>
+    <div class="color" style="background:#ffffff" onclick="setColor('#ffffff')"></div>
+  </div>
+
+  <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Exemple simplifié : losanges -->
+    <polygon points="100,50 150,100 100,150 50,100" fill="#fff" stroke="#000" onclick="colorElement(this)" />
+    <polygon points="200,50 250,100 200,150 150,100" fill="#fff" stroke="#000" onclick="colorElement(this)" />
+    <polygon points="100,200 150,250 100,300 50,250" fill="#fff" stroke="#000" onclick="colorElement(this)" />
+    <polygon points="200,200 250,250 200,300 150,250" fill="#fff" stroke="#000" onclick="colorElement(this)" />
+
+    <!-- Exemple simplifié : fleurs stylisées -->
+    <circle cx="100" cy="100" r="15" fill="#fff" stroke="#000" onclick="colorElement(this)" />
+    <circle

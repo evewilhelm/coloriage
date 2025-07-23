@@ -1,0 +1,33 @@
+/* Style général */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fffaf7;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  text-align: center;
+}
+
+/* En-tête */
+header {
+  background: linear-gradient(to right, #ffd6e0, #ffe5b4);
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Galerie */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  gap: 20px;
+}
+
+/* Cartes de dessin */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width:
